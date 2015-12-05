@@ -7,13 +7,7 @@ describe('EsriLayerControllerBase', function() {
 
     beforeEach(inject(function($rootScope, $controller) {
         scope = $rootScope.$new();
-        // mockDataSvc = dataSvc;
-        // spyOn(mockDataSvc, 'save').andCallThrough();
-        controller = $controller('EsriLayerControllerBase', {
-            // $attrs: {}
-            // $scope: scope
-            // dataSvc: mockDataSvc
-        });
+        controller = $controller('EsriLayerControllerBase', {});
         doNothingFunction = function() {
             return;
         };
